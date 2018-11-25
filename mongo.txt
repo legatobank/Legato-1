@@ -1,0 +1,154 @@
+nosql(non structured)
+mongodb,cacendra,redix
+-------------------------------------------------------------
+sql(structured database)
+--------------
+oracle,mysql,sql server
+-------------------------------------------------------------------------------
+1)mogodb is a cross-platform,
+document oriented database
+high performance,easy scalability
+2)mongodb works on cencept of collection and document.
+-----------------------------------------------------------------------
+Rdbms			mongodb
+-----------------------------------------------------------------------
+database	 		database
+table			collection
+row			document
+table join			embedded document
+primary key		default key_id provided by 		mongodb
+
+-----------------------------------------
+document :-it is a set of key-value pairs.
+collection is a group of mongodb document.
+a single mogodb server has multiple databases.
+------------------------------------------------------------------------
+Data type
+---------------------
+1)String
+2)Integer
+3)Boolean
+4)array
+5)Object
+6)Symbol
+7)date
+8)Object ID
+9)Binarydata
+10)Regular expression
+--------------------------------------------------------------------------
+1)to view database
+---------------------------
+show databases
+show dbs;
+------------------------------------
+
+2)to create database
+use <databasename>
+-----------------------------------------
+3)to se number of tables present
+show collections;
+show tables;
+----------------------------------------------
+4)to see which database your are in
+db
+----------------------------------------------
+5)to create table/collection
+db.createCollection('student');
+------------------------------------------------
+6)to insert data into collection
+db.student.insert({name:'yamuna',email:'yamuna@gmail.com',username:'yamuna',password:1234});
+--------------------------------------------------------------
+7)to view the rows/document
+db.student.find();
+-------------------------------------------------------------
+8)to view it in proper order
+db.student.find().pretty();
+-----------------------------------------------------------------------------
+9)to update the document
+db.student.update({name:'yamuna'},{$set:{password:'12345'}});
+----------------------------------------------------------------
+10)to delete the document
+db.student.remove({name:'yamuna'});
+---------------------------------------------------------------
+11)to drop database
+
+db.dropVerizonStud()
+------------------------------------------------------
+12)to sort the documents
+
+db.COLLECTION_NAME.find().sort({KEY:1})
+db.student.find().sort({KEY:1})
+--------------------------------------------------------------
+13)to drop collection/table
+
+db.student.drop()
+--------------------------------------------------------------
+www.mongodb.org
+----------------------------------------------------
+
+https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.2-signed.msi
+--------------------------------------------------------------------------
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
